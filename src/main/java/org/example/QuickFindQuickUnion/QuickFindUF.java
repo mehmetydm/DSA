@@ -1,4 +1,4 @@
-package org.example;
+package org.example.QuickFindQuickUnion;
 
 public class QuickFindUF {
     private int[] id;

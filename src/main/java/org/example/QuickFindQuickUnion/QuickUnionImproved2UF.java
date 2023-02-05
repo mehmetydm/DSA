@@ -1,11 +1,11 @@
-package org.example;
+package org.example.QuickFindQuickUnion;
 
 // Weighted quick union..
-public class QuickUnionImprovedUF {
+public class QuickUnionImproved2UF {
     private int[] id;
     private int[] sz;
 
-    public QuickUnionImprovedUF(int N) {
+    public QuickUnionImproved2UF(int N) {
         for(int i = 0; i<N; i++)
         {
             id[i] = i;
@@ -15,6 +15,7 @@ public class QuickUnionImprovedUF {
     }
     private int root(int i){
         while(i != id[i])
+            id[i] = id[id[i]];
             i = id[i];
         return i;
     }
